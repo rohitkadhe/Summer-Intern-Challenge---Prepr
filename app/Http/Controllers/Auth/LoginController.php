@@ -36,8 +36,10 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+        //This is done to authenticate with username instead of email
         $this->username = 'username';
     }
+    //This is so that authentication works with username as email is default
     public function username()
     {
         return $this->username;
