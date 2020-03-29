@@ -13,7 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.landing');
-});
-Route::resource('labs','LabsController');
+    Route::get('/', function () {
+        return view('pages.landing');
+    });
+
+    //Labs Routes
+    Route::get('/labs', 'Lab\LabsController@showAllLabs');
+    Route::get('/labs/{id}', 'Lab\LabsController@showLab');
+
+    // Authentication Routes
+    Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+    Route::post('login', 'Auth\LoginController@login');
+    Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+    
+    // Registration Routes
+    Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+    Route::post('register', 'Auth\RegisterController@register');
+    
