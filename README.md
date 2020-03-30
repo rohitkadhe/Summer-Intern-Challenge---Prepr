@@ -1,4 +1,4 @@
-## Prepr Full Stack Developer Summer Challenge 2020
+## Prepr Full Stack Developer Challenge - Summer 2020
  * Link to the data provided: https://drive.google.com/file/d/1XjqJ7kp2AcMQjWaf_exDTTx-1qU4ctGp/view?usp=sharing
  * Purpose: The purpose of this web app is allow students to easily find labs.
  * Challenge Duration: March 26th, 2020 - March 29th, 2020
