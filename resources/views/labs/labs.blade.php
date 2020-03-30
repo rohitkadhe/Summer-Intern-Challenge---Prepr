@@ -22,6 +22,7 @@
                         </div>
                     </div>
                     @endforeach
+                    {{-- Paganation (From laravel framework) --}}
                     {{$labs->links()}}
                     @else
                     <h2>No Labs found!</h2>
@@ -32,6 +33,3 @@
     </div>
 </div>
 @endsection
-
-
-{{-- card --}}

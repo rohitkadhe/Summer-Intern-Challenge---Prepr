@@ -10,7 +10,7 @@
         <p class="card-text">{{$lab->description}}</p>
         <p class="card-text">
             <span class="font-weight-bold text-dark">Location:</span>
-            <span class=" text-secondary">{{$location->address}}</span>
+            <a class=" text-primary" target="__blank" href="/map/{{$location->id}}">{{$location->address}}</a>
         </p>
         <p class="card-text">
             <span class="font-weight-bold text-dark">Category:</span>
