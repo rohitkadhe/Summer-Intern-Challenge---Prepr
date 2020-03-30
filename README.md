@@ -4,7 +4,7 @@
 * Before running the project ensure you have XAMPP control panel installed
 * Enable Apache and MySQL using the XAMPP control panel
 
-## Running the Project
+## Running The Project
 * Navigate to http://localhost/phpmyadmin/ and create a mysql database and name it PreprLabsDemo
 * Then run php artisan db:seed from the terminal to seed the database with data
 * Run php artisan serve to start the server and go to http://127.0.0.1:8000 on your browser
