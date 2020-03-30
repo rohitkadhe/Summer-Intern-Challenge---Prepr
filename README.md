@@ -3,7 +3,6 @@
 
 * Before running the project ensure you have XAMPP control panel installed
 * Enable Apache and MySQL using the XAMPP control panel
-* 
 
 ## Running the Project
 * Navigate to http://localhost/phpmyadmin/ and create a mysql database and name it PreprLabsDemo
@@ -28,8 +27,8 @@
 
 * After having all the data displaying correctly, I wired up authentication into the app using Laravel's build in Auth system. I made changes to get it working with my user model.
   * Primarily overriding a function in the LoginController to have Auth working with 'username' instead of 'email' 
-
+  
 * Finally my last step was to integrate with the Google Maps API so that when a User clicks on a Lab's address on the Lab details page a Map opens up with that lab's location pinned and hovering over the pin displays the address. This is how I interpreted the Google Maps portion of the challenge  
 
-## Demo video of the App
+## Demo Video Of The App
  * Demo Video is located in 'Project Demo - Video' folder in the root directory of the project
