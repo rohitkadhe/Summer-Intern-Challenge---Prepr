@@ -8,10 +8,13 @@
 * Enable Apache and MySQL using the XAMPP control panel
 
 ## Running The Project
-* Navigate to http://localhost/phpmyadmin/ and create a mysql database and name it "preprapp". (This name can be changed in the .env file by changing the DB_DATABASE value) 
-* Then run php artisan db:seed from the terminal to seed the database with data
-* Run php artisan serve to start the server and go to http://127.0.0.1:8000 on your browser
-* In order to have google maps work correctly change the GOOGLE_API_KEY value in the .env file to GOOGLE_API_KEY = YOUR_API_KEY
+* Navigate to http://localhost/phpmyadmin/ and create a mysql database and name it "preprapp". (This name can be changed in the .env file by changing the DB_DATABASE value)
+* Navigate to the project directory and run "npm install" from your terminal
+* Then run "composer install" from your terminal
+* Then run "php artisan migrate" followed by "php artisan db:seed" from the terminal to seed the database with data
+* Run "php artisan serve" to start the server and go to http://127.0.0.1:8000 on your browser
+* In order to have google maps work correctly change the GOOGLE_API_KEY value in the .env file to GOOGLE_API_KEY = YOUR_API_KEY (Follow https://developers.google.com/maps/documentation/javascript/get-api-key to learn how to get your own key)
+* Finally, to view labs login with Username: "LabManager" and Password: "Password1234" or register a new user
 
 ## Technologies Used
 * PHP Laravel framework was used to build this application
